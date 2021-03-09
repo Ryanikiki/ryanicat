@@ -4,4 +4,3 @@
 
 ![Cat](./image/cat.jpg)
 ![Another com](https://i.imgur.com/9wGJWa0.png)
-![](./a/b/c/Lxg6TaU.jpeg)
