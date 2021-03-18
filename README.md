@@ -29,7 +29,7 @@
                 <td><a href="https://asia.wotblitz.com/zh-tw/encyclopedia/vehicles/germany/G120_M41_90/"
                         title="M41_90" target="_blank">
                         <img src="image/M41_90.png"></a> M41 90</td>
-                <td>----------1100</td></br>
+                <td>-----------1100</td></br>
             </tr>
         <a href="https://asia.wotblitz.com/zh-tw/encyclopedia/vehicles/usa/"><img src="image/WOTB1.jpeg"></a>
     
