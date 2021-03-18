@@ -12,7 +12,7 @@
                        title="M41_bulldog"
                         target="_blank">
                         <img src="image/M41_bulldog.png"></a>M41 bulldog</td>
-                <td>.  1000</td></br>
+                <td>      1000</td></br>
             </tr>
             <tr>
                 <td colspan="2">中國</td>
