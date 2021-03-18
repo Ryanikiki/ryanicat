@@ -31,5 +31,5 @@
                         <img src="image/M41_90.png"></a> M41 90</td>
                 <td>-----------1100</td></br>
             </tr>
-        <a href="https://asia.wotblitz.com/zh-tw/encyclopedia/vehicles/usa/"><img src="image/WOTB1.jpeg" title="WOTB" target="_blank">></a>
+        <a href="https://asia.wotblitz.com/zh-tw/encyclopedia/vehicles/usa/"><img src="image/WOTB1.jpeg" title="WOTB" target="_blank"></a>
     
