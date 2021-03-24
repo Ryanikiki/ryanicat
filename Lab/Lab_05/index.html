@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產學新尖兵</title>
+    <style>
+        .wrapper {
+            text-align: center;
+            border-bottom: 100px solid green;
+            background-color: yellow;
+        }
+
+        table {
+            margin: auto;
+            padding: 20px;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        tr {
+            border: 3px solid black;
+        }
+
+        td {
+            border: 2px solid rgb(91, 147, 231);
+            padding: 30px 30px;
+            background-color: yellow;
+            color: black;
+        }
+
+        th {
+            border: 2px solid rgb(91, 147, 231);
+            padding: 30px 30px;
+            background-color: rgb(255, 0, 0);
+            color: black;
+        }
+
+        /*第一欄第一列：左上*/
+        tr:first-child td:first-child {
+            border-top-left-radius: 20px;
+        }
+
+        /*第一欄最後列：左下*/
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 20px;
+        }
+
+        /*最後欄第一列：右上*/
+        tr:first-child th:last-child {
+            border-top-right-radius: 20px;
+        }
+
+        /*最後欄第一列：右下*/
+        tr:last-child th:last-child {
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+</head>
+<div class='wrapper'>
+
+    <body>
+        <br>Lab_05</br>
+        <caption>課表</caption>
+        <table>
+            <tr>
+                <td></td>
+                <td>星期一</td>
+                <td>星期二</td>
+                <td>星期三</td>
+                <td>星期四</td>
+                <td>星期五</td>
+                <th>星期六</th>
+                <th>星期日</th>
+            </tr>
+            <tr>
+                <td>06:00~12:00</td>
+                <td>操課</td>
+                <td>操課</td>
+                <td>操課</td>
+                <td>操課</td>
+                <td>操課</td>
+                <th>休假</th>
+                <th>休假</th>
+            </tr>
+            <tr>
+                <td>12:00~18:00</td>
+                <td>用餐操課</td>
+                <td>用餐操課</td>
+                <td>用餐操課</td>
+                <td>用餐操課</td>
+                <td>用餐操課</td>
+                <th>休假</th>
+                <th>休假</th>
+            </tr>
+            <tr>
+                <td>18:00~22:00</td>
+                <td>用餐夜教</td>
+                <td>用餐夜教</td>
+                <td>用餐夜教</td>
+                <td>用餐夜教</td>
+                <td>用餐夜教</td>
+                <th>休假</th>
+                <th>休假</th>
+            </tr>
+        </table>
+    </body>
+</div>
+</body>
+
+</html>
