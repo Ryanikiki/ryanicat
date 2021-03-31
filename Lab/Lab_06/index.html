@@ -5,20 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>產學新尖兵</title>
+    <title>Lab_06</title>
     <style>
-        .wrapper {
-            text-align: center;
-            border-bottom: 100px solid green;
-            background-color: yellow;
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template: auto 1fr auto / auto 1fr auto
         }
 
-        #heading {
-            color: purple;
+        /* etc */
+
+        header {
+            background: black;
+            padding: 2rem;
+            grid-column: 1 / 4;
+        }
+
+        .left-sidebar {
+            background: lightblue;
+            grid-column: 1 / 2;
+        }
+
+        main {
+            background-image: url("images/cat.jpg");
+            grid-column: 2 / 3;
+        }
+
+        .right-sidebar {
+            background: yellow;
+            grid-column: 3 / 4;
+        }
+
+        footer {
+            background: wheat;
+            padding: 2rem;
             text-align: center;
+            grid-column: 1 / 4;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+        }
+
+        .left-sidebar,
+        .right-sidebar {
+            padding: 1rem;
         }
 
         table {
+            text-align: center;
             margin: auto;
             padding: 20px;
             border-collapse: separate;
@@ -30,6 +65,7 @@
         }
 
         td {
+            text-align: center;
             border: 2px solid rgb(91, 147, 231);
             padding: 30px 30px;
             background-color: yellow;
@@ -37,6 +73,7 @@
         }
 
         th {
+            text-align: center;
             border: 2px solid rgb(91, 147, 231);
             padding: 30px 30px;
             background-color: rgb(255, 0, 0);
@@ -64,11 +101,12 @@
         }
     </style>
 </head>
-<div class='wrapper'>
 
-    <body>
-        <h1 id="heading">Lab_05</h1>
-        <caption>課表</caption>
+<body>
+    <header><img src="images/WOTB1.jpeg"><>Lab_06</header>
+    <div class="left-sidebar"></div>
+    <main>
+        <caption></caption>
         <table>
             <tr>
                 <td></td>
@@ -111,7 +149,9 @@
                 <th>休假</th>
             </tr>
         </table>
-</div>
+    </main>
+    <div class="right-sidebar"></div>
+    <footer>2021</footer>
 </body>
 
 </html>
