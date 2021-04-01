@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_09</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-gap: 20px;
+            grid-auto-rows: minmax(50px, auto);
+        }
+
+        .one {
+            background: lightblue;
+            grid-column: 1 / 5;
+            grid-row: 1;
+        }
+
+        .two {
+            background: yellow;
+            grid-row: 2 / 4;
+            grid-column: 1 / 3;
+        }
+
+        .three {
+            background: yellow;
+            grid-row: 2 / 4;
+            grid-column: 3 / 5;
+        }
+
+        .four {
+            background: greenyellow;
+            grid-row: 3 / 7;
+            grid-column: 1 / 3;
+        }
+
+        .five {
+            background: green;
+            grid-row: 5 / 8;
+            grid-column: 1 / 3;
+        }
+
+        .six {
+            background: pink;
+            grid-row: 3 / 7;
+            grid-column: 3 / 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+      </div>
+</body>
+
+</html>
