@@ -16,73 +16,127 @@
     <title>Lab_07</title>
     <style>
         body {
+            display: grid;
+            height: 100vh;
+            grid-template: auto 1fr auto / auto 1fr auto
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* etc */
+
+        header {
+            background: lightcoral;
+            padding: 2rem;
+            grid-column: 1 / 4;
+        }
+
+        .left-sidebar {
+            background: lightblue;
+            grid-column: 1 / 2;
+        }
+
+        main {
+            background-image: url("images/mk.jpg");
+            grid-column: 2 / 3;
+        }
+
+        .right-sidebar {
+            background: yellow;
+            grid-column: 3 / 4;
+        }
+
+        footer {
+            background: wheat;
+            padding: 2rem;
+            text-align: center;
+            grid-column: 1 / 4;
+        }
+
+        body {
+            font-family: system-ui, sans-serif;
+        }
+
+        .left-sidebar,
+        .right-sidebar {
+            padding: 1rem;
+        }
+
+        zz body {
             font-size: 1rem;
         }
 
         th {
             padding: 1rem;
-            background-color: lightblue;
+            background-color: red;
         }
 
         td {
             padding: 1rem;
             background-color: yellow;
         }
-
     </style>
 
 </head>
 
 <body>
-    <div class="container">
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">星期一</th>
-                    <th scope="col">星期二</th>
-                    <th scope="col">星期三</th>
-                    <th scope="col">星期四</th>
-                    <th scope="col">星期五</th>
-                    <th scope="col">星期六</th>
-                    <th scope="col">星期日</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">06:00~12:00</th>
-                    <td>操課</td>
-                    <td>操課</td>
-                    <td>操課</td>
-                    <td>操課</td>
-                    <td>操課</td>
-                    <th>休假</th>
-                    <th>休假</th>
-                </tr>
-                <tr>
-                    <th scope="row">12:00~18:00</th>
-                    <td>用餐操課</td>
-                    <td>用餐操課</td>
-                    <td>用餐操課</td>
-                    <td>用餐操課</td>
-                    <td>用餐操課</td>
-                    <th>休假</th>
-                    <th>休假</th>
-                </tr>
-                <tr>
-                    <th scope="row">18:00~22:00</th>
-                    <td>用餐夜教</td>
-                    <td>用餐夜教</td>
-                    <td>用餐夜教</td>
-                    <td>用餐夜教</td>
-                    <td>用餐夜教</td>
-                    <th>休假</th>
-                    <th>休假</th>
-                </tr>
-            </tbody>
-            </thead>
-        </table>
-    </div>
+    <header><h1>課表</h1></header>
+    <div class="left-sidebar"></div>
+    <main>
+        <div class="container">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">星期一</th>
+                        <th scope="col">星期二</th>
+                        <th scope="col">星期三</th>
+                        <th scope="col">星期四</th>
+                        <th scope="col">星期五</th>
+                        <th scope="col">星期六</th>
+                        <th scope="col">星期日</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">06:00~12:00</td>
+                        <td>操課</td>
+                        <td>操課</td>
+                        <td>操課</td>
+                        <td>操課</td>
+                        <td>操課</td>
+                        <th>休假</th>
+                        <th>休假</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">12:00~18:00</td>
+                        <td>用餐操課</td>
+                        <td>用餐操課</td>
+                        <td>用餐操課</td>
+                        <td>用餐操課</td>
+                        <td>用餐操課</td>
+                        <th>休假</th>
+                        <th>休假</th>
+                    </tr>
+                    <tr>
+                        <td scope="row">18:00~22:00</td>
+                        <td>用餐夜教</td>
+                        <td>用餐夜教</td>
+                        <td>用餐夜教</td>
+                        <td>用餐夜教</td>
+                        <td>用餐夜教</td>
+                        <th>休假</th>
+                        <th>休假</th>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+    </main>
+    <div class="right-sidebar"></div>
+    <footer>@2021</footer>
 </body>
 
 </html>
