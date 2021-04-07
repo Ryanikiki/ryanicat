@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise_11</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <style>
         body {
+            margin: 0;
             display: grid;
-            height: 100vh;
+            height: 1%;
             grid-template-rows: auto 1fr auto;
+            font-family: system-ui, sans-serif;
+        }
+
+        /*整個table的調整*/
+        table {
+            border: 1px solid #000;
+            font-size: 16px;
+            width: 100%;
+            border: 0px solid #000;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        h1,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        a {
+            font-family: 'Kalam', cursive;
+        }
+
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+        h2 {
+            font-family: 'cwTeXKai', serif;
+        }
+
+        th {
+            border: 0px solid #000;
+            padding: 5px;
         }
 
         header {
             background: coral;
-            padding: 0.5rem;
+            padding: 0rem;
+            text-align: left;
         }
 
         main {
@@ -28,20 +59,158 @@
             text-align: center;
         }
 
-        body {
-            font-family: system-ui, sans-serif;
+        .box_all {
+            margin: 5%;
+            display: flex;
+            height: 30%;
+            border: red 1px solid;
+            /* display: flex; */
+            /* flex-direction: column; */
+            flex-wrap: nowrap;
         }
 
+        .flex-top {
+            margin: 5%;
+            display: flex;
+            padding: 10%;
+            border: purple 1px solid;
+            /* // 修改以下值試試看 wrap | nowrap | wrap | wrap-reverse */
+            flex-wrap: nowrap;
+
+        }
+
+        .item-top {
+            margin: 5%;
+            background-color: white;
+            margin: 10%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: top;
+            border: red 1px solid;
+            color: black;
+            font-size: 5rem;
+        }
+
+        .flex-left {
+            display: flex;
+            height: 50px;
+            padding: 10%;
+            background-color: #61a0f8;
+            /* 修改以下值試試看 row | row-reverse | column | column-reverse; */
+            flex-direction: row;
+        }
+
+        .item-left {
+            flex: 1;
+            background-color: white;
+            margin: 1px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            color: black;
+            font-size: 2rem;
+        }
+
+        .box {
+            width: 10%;
+            border: #696969 1px solid;
+            /* display: flex; */
+            flex-direction: column;
+        }
+
+        .box_column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6 {
+            background: wheat;
+            border: #696969 1px solid;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>&emsp; MyShop</h1> 
+
+        <table width="100%">
+            <tr>
+                <th width="15%">
+                    <h1 style="color: ivory;">MyShop</h1>
+                </th><br>
+                <th width="60%"></th>
+                <th width="5%">
+                    <h2 style="color: blue;"> 商品</h2>
+                </th>
+                <th width="8%">
+                    <h2 style="color: blue;"> 購物車</h2>
+                </th>
+            </tr>
+        </table>
+
     </header>
-    <main></main>
-    <footer>Footer Content — Header.com 2020</footer>
+    <main>
+
+        <div class="box_all">
+
+            <div class="box">
+                <div class="item1">
+                    商品分類
+                </div>
+                <div class="item2">
+                    所有商品
+                </div>
+                <div class="item3">
+                    暢銷商品
+                </div>
+                <div class="item4">
+                    本日精選
+                </div>
+                <div class="item5">
+                    新品上市
+                </div>
+            </div>
+
+            <!-- <div class="flex-left">
+            <div class="item-left">1</div>
+            <div class="item-left">2</div>
+            <div class="item-left">3</div>
+        </div> -->
+
+            <div class="flex-top">
+                <div class="item-top">
+                    <table>
+                        <td>
+                            <img src="images/ZMpETy0b.jpeg">
+                        </td>
+                    </table>
+                </div>
+                <div class="item-top">
+                    <table>
+                        <td>
+                            <img src="images/ODZ7Zpzb.jpeg">
+                        </td>
+                    </table>
+                </div>
+                <div class="item-top">
+                    <table>
+                        <td>
+                            <img src="images/qT3MWAbb.jpeg">
+                        </td>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <a style="color: ivory;" text-size: 12px>＠2021 MyShop All rights reserved</a>
+    </footer>
 </body>
 
 </html>
