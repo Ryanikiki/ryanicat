@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <title>Exercise_12</title>
 </head>
 <style>
     body {
         display: grid;
-        grid-template-rows: 3vh auto 80vh auto 3vh;
+        height: 100vh;
+        grid-template-rows: auto 1fr auto;
     }
 
     header {
@@ -40,7 +45,7 @@
     }
 
     .w1 {
-        color: blanchedalmond;
+        color: white;
         font-size: x-large;
         font-family: cursive;
     }
@@ -54,11 +59,16 @@
         grid-template-columns: 400px 650px 400px;
     }
 
+    i {
+        font-family: 'Kalam', cursive;
+    }
+
     .ta1 {
         border: 2px solid gray;
         width: 80px;
         height: 30px;
         text-align: center;
+        background-color: wheat;
     }
 
     .ta2 {
@@ -66,7 +76,7 @@
         text-align: center;
         width: 80px;
         height: 30px;
-
+        background-color: wheat;
     }
 
     .moveR1 {
@@ -74,7 +84,6 @@
         grid-template-columns: 1fr auto;
         grid-template-rows: 1fr 1fr;
         margin-right: 3px;
-
     }
 
     table {
@@ -104,17 +113,12 @@
         display: grid;
         grid-template-rows: 165px 30px auto;
         grid-template-columns: 80px 80px;
-
         border: 2px grey solid;
     }
 
     .n1 {
         grid-row: 1/2;
         grid-column: 1/3;
-
-
-
-
     }
 
     .n2 {
@@ -175,23 +179,30 @@
 
     .word1 {
         font-size: 1cm;
-        font-family: fantasy;
+        font-family: 'Kalam', cursive;
     }
 </style>
 
 <body>
-    <header></header>
-    <div id="c1">
-        <div style="text-align: center; margin: auto;" class="w1">MyShop</div>
-        <div></div>
-        <div></div>
-        <div class="r1">
-            <p>商品</p>
-            <p>購物車</p>
+    <header>
+        <div id="c1">
+            <div style="font-family: 'Kalam', cursive; margin: auto;" class="w1">MyShop</div>
+            <div></div>
+            <div></div>
+            <div class="r1">
+                <table>
+                    <td>
+                        <p>商品</p>
+                    </td>
+                    <td>
+                        <p>購物車</p>
+                    </td>
+                </table>
+            </div>
         </div>
-    </div>
+    </header>
     <main>
-        <div class=" moveR1">
+        <div class="moveR1">
             <table style="border-collapse:collapse; margin-top: 8px;">
                 <tbody>
                     <tr>
@@ -215,9 +226,9 @@
         <div class="squar1">
             <div class="d1" id="spA">
                 <div class="n1">
-                    <img src="./image/2G16qPab.jpg">
+                    <img src="./images/ZMpETy0b.jpeg">
                 </div>
-                <div class="n2"><span style="font-size: 2px;">蛋糕</span></div>
+                <div class="n2"><span style="font-family: 2px;">蛋糕</span></div>
                 <div class="n3">
                     <input type="button" value="加入購物車" style="width:80px;height:30px;">
                 </div>
@@ -225,50 +236,51 @@
             </div>
             <div class="d2" id="spA">
                 <div class="n1">
-                    <img src="./image/fziT4jzb.gif.jpeg">
-                </div>
-                <div class="n2"><span style="font-size: 2px;">魔術方塊？</span></div>
-                <div class="n3">
-                    <input type="button" value="加入購物車" style="width:80px;height:30px;">
-                </div>
-                <div class="n4"><span class="word1">NT$150</span></div>
-            </div>
-            <div class="d3" id="spA">
-                <div class="n1">
-                    <img src="./image/ODZ7Zpzb.jpg">
+                    <img src="./images/ODZ7Zpzb.jpeg">
                 </div>
                 <div class="n2"><span style="font-size: 2px;">滿滿的點心</span></div>
                 <div class="n3">
                     <input type="button" value="加入購物車" style="width:80px;height:30px;">
                 </div>
-                <div class="n4"><span class="word1">NT$150</span></div>
+                <div class="n4"><span class="word1">NT$300</span></div>
             </div>
-            <div class="d4" id="spA">
+            <div class="d3" id="spA">
                 <div class="n1">
-                    <img src="./image/qT3MWAbb.jpg">
+                    <img src="./images/qT3MWAbb.jpeg">
                 </div>
                 <div class="n2"><span style="font-size: 2px;">紅色的</span></div>
                 <div class="n3">
                     <input type="button" value="加入購物車" style="width:80px;height:30px;">
                 </div>
-                <div class="n4"><span class="word1">NT$150</span></div>
-
+                <div class="n4"><span class="word1">NT$666</span></div>
             </div>
-            <div class="d5" id="spA">
+            <div class="d4" id="spA">
                 <div class="n1">
-                    <img src="./image/ZMpETy0b.gif.jpeg">
+                    <img src="./images/2G16qPab.jpeg">
                 </div>
                 <div class="n2"><span style="font-size: 2px;">蛋糕</span></div>
                 <div class="n3">
                     <input type="button" value="加入購物車" style="width:80px;height:30px;">
                 </div>
-                <div class="n4"><span class="word1">NT$150</span></div>
+                <div class="n4"><span class="word1">NT$85</span></div>
+
+            </div>
+            <div class="d5" id="spA">
+                <div class="n1">
+                    <img src="./images/fziT4jzb.jpeg">
+                </div>
+                <div class="n2"><span style="font-size: 2px;">魔術方塊？</span></div>
+                <div class="n3">
+                    <input type="button" value="加入購物車" style="width:80px;height:30px;">
+                </div>
+                <div class="n4"><span class="word1">NT$999</span></div>
             </div>
         </div>
         <div></div>
     </main>
-    <div id="c2">@2021 MyShop ALL rights reserved</div>
-    <footer></footer>
+    <footer>
+        <div id="c2">@2021 MyShop ALL rights reserved</div>
+    </footer>
 
 </body>
 
