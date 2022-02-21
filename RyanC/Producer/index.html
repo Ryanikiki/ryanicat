@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="path/to/style.css" />
     <style>
         body {
             margin: 0;
@@ -22,13 +23,51 @@
             height: 250px;
         }
 
+        table tr {
+            border-bottom: solid 2px white;
+        }
+
+        table tr:last-child {
+            border-bottom: none;
+        }
+
+        table th {
+            position: relative;
+            width: 30%;
+            background-color: #7d7d7d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        table th:after {
+            display: block;
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            top: calc(50% - 10px);
+            right: -10px;
+            border-left: 10px solid gray;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
         table td {
+            text-align: left;
+            width: 70%;
+            text-align: center;
+            background-color: lightcyan;
+            padding: 10px 0;
+        }
+
+        /* table td {
             background: black;
             color: white;
             padding: 20px;
             border: 10px solid white;
-            /* default is vertical-align: middle; */
-        }
+            default is vertical-align: middle; 
+        } */
 
         .center-table {
             display: table;
@@ -133,7 +172,7 @@
 
             .leftmenu {
                 display: block;
-                background-color: #272626;
+                background-color: black;
                 color: white;
                 height: 100%;
                 width: 60vw;
@@ -170,12 +209,24 @@
 
 <body>
     <div class="menucontainer">
+        <div class="leftmenu">
+            <div class="closebtn">
+                X
+            </div>
+            <ul id="menuUl" class="leftul">
+                <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/home/index.html">Home</a></li>
+                <li class="current-active"><a href="https://ryanikiki.github.io/ryanicat/RyanC/Producer/index.html">Producer</a></li>
+                <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/products/index.html">Products</a></li>
+                <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/about/index.html">About</a></li>
+                <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/login/index.html">LOGIN</a></li>
+            </ul>
+        </div>
         <nav class="menu">
             <a id="menubtn" class="toggle-nav" href="#">☰</a>
             <div class="menu-logo"><img src=""></div>
             <ul id="menuUl" class="">
                 <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/home/index.html">Home</a></li>
-                <li class="current-active"><a href="https://ryanikiki.github.io/ryanicat/RyanC/new/index.html">New</a></li>
+                <li class="current-active"><a href="https://ryanikiki.github.io/ryanicat/RyanC/Producer/index.html">Producer</a></li>
                 <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/products/index.html">Products</a></li>
                 <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/about/index.html">About</a></li>
                 <li><a href="https://ryanikiki.github.io/ryanicat/RyanC/login/index.html">LOGIN</a></li>
@@ -185,14 +236,25 @@
     <table>
         <tr>
             <td>
-                
+                <img src="images/TingEnHuang.jpg">
             </td>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <td>Ting-En Huang</td>
+                </tr>
+                <tr>
+                    <th>出生</th>
+                    <td>1998/03/06 </td>
+                </tr>
+                <tr>
+                    <th>E-mail</th>
+                    <td>huangtingen0306
+                        @gmail.com</td>
+                </tr>
+            </table>
         </tr>
     </table>
-
-    <div class="center-table">
-        <p></p>
-    </div>
 </body>
 
-</html
+</html>
