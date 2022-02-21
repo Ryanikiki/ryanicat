@@ -15,7 +15,7 @@
             background: #f06d06;
         }
 
-        .box {
+        .login {
             width: 300px;
             padding: 40px;
             position: absolute;
@@ -23,17 +23,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: #191919;
+            box-shadow: 15px 15px 25px #535252;
             text-align: center;
         }
 
-        .box h1 {
+        .login h1 {
             color: white;
             text-transform: uppercase;
             font-weight: 500;
         }
 
-        .box input[type="text"],
-        .box input[type="password"] {
+        .login input[type="text"],
+        .login input[type="password"] {
             border: 0;
             background: none;
             display: block;
@@ -48,13 +49,13 @@
             transition: 0.25s;
         }
 
-        .box input[type="text"]:focus,
-        .box input[type="password"]:focus {
+        .login input[type="text"]:focus,
+        .login input[type="password"]:focus {
             width: 280px;
             border-color: #2ecc71;
         }
 
-        .box input[type="submit"] {
+        .login input[type="submit"] {
             border: 0;
             background: none;
             display: block;
@@ -69,8 +70,9 @@
             cursor: pointer;
         }
 
-        .box input[type="submit"]:hover {
+        .login input[type="submit"]:hover {
             background: #2ecc71;
+            transition: 0.5s;
         }
 
         table {
@@ -228,7 +230,7 @@
 </head>
 
 <body>
-    <form class="box" action="index.html" method="post">
+    <form class="login" action="index.html" method="post">
         <h1>Login</h1>
         <input type="text" name="" placeholder="Username">
         <input type="password" name="" placeholder="Password">
