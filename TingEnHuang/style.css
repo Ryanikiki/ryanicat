@@ -211,13 +211,36 @@ h3{
     bottom: 39%;
     opacity: 1;
 }
+.producer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.producer-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.producer-col img{
+    width:  100%;
+    border-radius: 10px;
+}
+.producer-col p{
+    padding: 0;
+}
+.producer-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
 
 
 
 
 
-
-
+ 
 
 
 
