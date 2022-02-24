@@ -6,7 +6,15 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/tree.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/TingEnHuang2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+.header2{
+    min-height: auto;
+    width: auto;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/TingEnHuang2.jpg);
     background-position: center;
     background-size: cover;
     position: relative; 
@@ -127,6 +135,11 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
+/* h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+} */
 
 p{
     color: rgb(0, 0, 0);
@@ -141,7 +154,7 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.course-col{
+.introduce-col{
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -155,7 +168,7 @@ h3{
     font-weight: 600;
     margin: 10px 0;
 }
-.course-col:hover{
+.introduce-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 @media(max-width: 700px){
@@ -172,14 +185,14 @@ h3{
     text-align: center;
     padding-top: 50px;
 }
-.compus-col{
+.studio-col{
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.compus-col img{
+.studio-col img{
     width: 100%;
     display: block;
 }
@@ -251,6 +264,49 @@ h3{
     }
 }
 
+/* ----------producer2------- */
+.producer2{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.producer2 h1{
+    color: #fff;
+}
+.producer2-col{
+    flex-basis: 42%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #e7e55b;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.producer2-col img{
+    height:  40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.producer2-col p{
+    padding: 0%;
+}
+.producer2-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.producer2-col .fa{
+    color: #f44336
+}
+@media(max-width: 700px){
+    .producer2-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+
 /* ------about------ */
 .about{
     width: 80%;
@@ -258,7 +314,248 @@ h3{
     text-align: center;
     padding-top: 100px;
 }
+.about h1{
+    color: #fff;
+}
 
+/* --------products--------- */
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.products-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+} 
+.products-col img{
+    width: 100%;
+    display: block;
+}
+.products h1{
+    color: #fff;
+}
+.products h3{
+    color: #fff;
+}
+
+/* -------login------- */
+
+.login {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    box-shadow: 15px 15px 25px #535252;
+    text-align: center;
+}
+
+.login h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+.login input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background: #2ecc71;
+    transition: 0.5s;
+}
+
+table {
+    background: white;
+    width: 240px;
+    border-collapse: separate;
+    margin: 20px;
+    height: 250px;
+}
+
+table td {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    /* default is vertical-align: middle; */
+}
+
+.center-table {
+    display: table;
+    height: 250px;
+    background: white;
+    width: 240px;
+    margin: 20px;
+}
+
+.center-table p {
+    display: table-cell;
+    margin: 0;
+    background: black;
+    color: white;
+    padding: 20px;
+    border: 10px solid white;
+    vertical-align: middle;
+}
+
+/*the menu nav bar start ------->*/
+.menu {
+    width: 100%;
+    display: flex;
+    background: black;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.menu li {
+    float: left;
+    list-style: none;
+    margin: 0px 50px 0px 0px;
+    font-size: 16px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(146, 151, 150);
+    transition: color linear 0.15s;
+    cursor: pointer;
+}
+
+.menu .menu-logo {
+    margin: auto;
+    margin-left: 0px;
+    padding: 10px 10px 10px 20px;
+}
+
+.menu .menu-logo a {
+    color: #fff;
+}
+
+.menu a:hover,
+.menu .current-active a {
+    text-decoration: none;
+    color: #FF9900;
+}
+
+.toggle-nav,
+.leftmenu {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .menucontainer {
+        display: flex;
+    }
+
+    .menu {
+        position: relative;
+        display: inline-block;
+    }
+
+    .toggle-nav {
+        display: block;
+        position: absolute;
+        left: 4%;
+        color: #ffffff;
+        text-decoration: none;
+        line-height: 40px;
+    }
+
+    .menu .menu-logo {
+        position: relative;
+        left: 40%;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .closebtn {
+        position: relative;
+        margin: 16px;
+        left: 80%;
+        font-size: 1.5em;
+    }
+
+    .closebtn:hover {
+        cursor: pointer;
+        color: #FF9900;
+    }
+
+    .leftmenu {
+        display: block;
+        background-color: black;
+        color: white;
+        height: 100%;
+        width: 60vw;
+        z-index: 1;
+        position: fixed;
+        left: -100%;
+        transition: all 1s;
+    }
+
+    .leftmenu.active {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        transition: all 1s;
+    }
+
+    .leftul li {
+        list-style: none;
+        margin: 32px auto;
+        font-size: 2em;
+    }
+
+    .leftul li.current-active,
+    .leftul li:hover {
+        color: #FF9900;
+    }
+
+    .leftul li:hover {
+        cursor: pointer;
+    }
+}
 
 
 
