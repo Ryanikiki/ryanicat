@@ -97,7 +97,7 @@ nav .fa{
         background: #f44336;
         height: 100vh;
         width: 200px;
-        top: 0;
+        top: 0%;
         right: -200px;
         text-align: left;
         z-index: 2;
@@ -129,11 +129,11 @@ h1{
 }
 
 p{
-    color: #777;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 50px;
+    padding: 30px;
 }
 
 .row{
@@ -215,28 +215,49 @@ h3{
 .producer{
     width: 80%;
     margin: auto;
-    text-align: center;
     padding-top: 100px;
+    text-align: center;
 }
 .producer-col{
-    flex-basis: 45%;
+    flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
+    background: #e7e55b;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
 }
 .producer-col img{
-    width:  100%;
-    border-radius: 10px;
+    height:  40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
 }
 .producer-col p{
-    padding: 0;
+    padding: 0%;
 }
 .producer-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     text-align: left;
 }
+.producer-col .fa{
+    color: #f44336
+}
+@media(max-width: 700px){
+    .producer-col img{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
 
+/* ------about------ */
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
 
 
 
