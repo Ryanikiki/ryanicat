@@ -326,21 +326,21 @@ h3{
     padding-top: 50px;
 }
 .products-col{
-    flex-basis: 32%;
+    flex-basis: 90%;
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 } 
 .products-col img{
-    width: 100%;
+    width: 70%;
     display: block;
 }
 .products h1{
     color: #fff;
 }
 .products h3{
-    color: #fff;
+    color: #fff; 
 }
 
 /* -------login------- */
